@@ -24,6 +24,11 @@
   width: 2rem;
   height: 2rem;
 }
+.sidebar button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+}
 
 .main-navigation{
   display: flex;
@@ -45,4 +50,20 @@
 }
 .main-navigation a.active {
  color: var(--twitter-blue)
+}
+
+@media (max-width: 780px) {
+  .sidebar {
+    padding: 1.5rem 0.75rem;
+    align-items: center;
+  }
+  .sidebar button span {
+    display: none;
+  }
+  .sidebar button svg {
+    display: block;
+  }
+  .main-navigation a span {
+    display: none;
+  }
 }
